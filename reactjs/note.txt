@@ -1,0 +1,12 @@
+redux : như 1 bộ nhớ chạy song song với react, lưu các giá trị cần dùng trong react
+env   : dùng để cấu hình môi trường (không được up lên github)
+evn.example: là file cấu hình môi trường chỉ có tham số nhưng không có giá trị(up lên github thay file env)
+axios : kết nối tới api và giao tiếp với backend
+apis: là các đường link giúp be và fe giao tiếp với nhau
+index.js : là file chạy đầu tiên
+redux và localstorage: (stackoverflow)
+appReducer : lưu những hành động của app (app chạy thành công? ...)
+userReducer : lưu hành động đối với người dùng (thêm, xóa, sửa ...)
+rootReducer : gộp tất cả hàm con reducer vào làm 1 file
+
+dbPassword với supabase : 02082004@LocAA

@@ -1,0 +1,157 @@
+{
+    "homeheader": {
+        "specialty": "Chuyên khoa",
+        "searchdoctor": "Tìm bác sĩ theo chuyên khoa",
+        "health-facility": "Cơ sở y tế",
+        "select-room": "Chọn phòng khám",
+        "doctor": "Bác sĩ",
+        "select-doctor": "Chọn bác sĩ giỏi",
+        "fee": "Gói khám",
+        "check-health": "Khám sức khỏe tổng quát",
+        "support": "Hỗ trợ",
+        "welcome": "Xin chào"
+    },
+    "banner": {
+        "platform": "NỀN TẢNG Y TẾ",
+        "title2": "CHĂM SÓC SỨC KHỎE TOÀN DIỆN",
+        "find": "Tìm kiếm thông tin ở đây",
+        "child1": "Khám Chuyên khoa",
+        "child2": "Khám từ xa",
+        "child3": "Khám tổng quát",
+        "child4": "Xét nghiệm y học",
+        "child5": "Sức khỏe tinh thần",
+        "child6": "Khám nha khoa"
+    },
+    "section-specialty": {
+        "title-specialty": "CHUYÊN KHOA PHỔ BIẾN",
+        "more": "Xem thêm",
+        "muscle-bone": "Cơ xương khớp "
+    },
+    "section-medical-faclity": {
+        "title-medical": "CƠ SỞ Y TẾ NỔI BẬT",
+        "more": "Xem thêm",
+        "healthcare-system": "Hệ thống y tế"
+    },
+    "outstandingdoctor": {
+        "outstandingdoctor": "BÁC SĨ NỔI BẬT TUẦN QUA",
+        "find": "Tìm kiếm",
+        "proffesor": "Giáo sư, Tiến sĩ ",
+        "muscle-bone": "Cơ xương khớp ",
+        "mental": "Khoa tâm thần",
+        "psycho": "Khoa tâm lí",
+        "obstetric": "Khoa sinh sản"
+    },
+    "handbook": {
+        "handbook": "CẨM NANG",
+        "all": "Tất cả bài viết"
+    },
+    "about": {
+        "about": "TRUYỀN THÔNG NÓI GÌ VỀ LỘC",
+        "detail": "998 519 lượt xem. Đã công chiếu vào 9 thg 8, 2024 #13 trong danh mục âm nhạc Thịnh hành #24kright #bray #huynhconghieu #hipz #defjamvn #phcc #noidungnhaycampart2 #rightnhayvaochoinay ►Stream music: https://umvn.lnk.to/phuhochocon 24K.RIGHT - PHÙ HỘ CHO CON [feat. B RAY, HUỲNH CÔNG HIẾU, HIPZ] | OFFICIAL MUSIC VIDEO Project by: DefJam Recordings Vietnam Executive Producer: Tam Meo Assistant: Khiem Bui, Khải Tô, Thanh Mai Music Executive Producer: 24k.Right Written & Performed by 24k.Right, B Ray, Huỳnh Công Hiếu Music Producer: Hipz Mixing & Mastering Engineer: mixedbyenkey Recorded at: NVB record Special thanks to MaxBenderz"
+    },
+    "menu": {
+        "admin": {
+            "manage-user": "Người dùng",
+            "manage-doctor": "Quản lí bác sĩ",
+            "manage-admin": "Quản lí Admin",
+            "crud": "CRUD user",
+            "crud-redux": "CRUD user(with redux)",
+            "manage-clinic": "Quản lí phòng khám",
+            "clinic": "Phòng khám",
+            "specialty": "Chuyên khoa",
+            "manage-specialty": "Quản lí chuyên khoa",
+            "handbook": "Cẩm nang",
+            "manage-handbook": "Quản lí cẩm nang"
+        },
+        "doctor": {
+            "manage-schedule": "Quản lí kế hoạch khám bệnh",
+            "schedule": "Lịch trình khám bệnh",
+            "manage-patient": "Quản lí lịch hẹn của bệnh nhân"
+        }
+    },
+    "manage-user": {
+        "add": "Thêm mới người dùng",
+        "title": "QUẢN LÍ NGƯỜI DÙNG VỚI ADMIN",
+        "firstname": "Họ và tên đệm",
+        "lastname": "Tên",
+        "address": "Địa chỉ",
+        "gender": "Giới tính",
+        "action": "Hành động",
+        "password": "Mật khẩu",
+        "phone": "Số điện thoại",
+        "male": "Nam",
+        "female": "Nữ",
+        "other": "Khác",
+        "image": "Hình ảnh",
+        "save": "Lưu thay đổi",
+        "position": "Vị trí",
+        "role": "Vai trò",
+        "upload": "Tải ảnh"
+    },
+    "modal": {
+        "add": "Thêm mới",
+        "cancel": "Hủy bỏ",
+        "save": "Lưu các thay đổi",
+        "create": "Tạo mới người dùng trong hệ thống",
+        "edit": "Chỉnh sửa thông tin người dùng",
+        "admin": "Admin",
+        "doctor": "Bác sĩ",
+        "patient": "Bệnh nhân",
+        "role": "Vai trò"
+    },
+    "manage-schedule": {
+        "title": "QUẢN LÍ KẾ HOẠCH KHÁM BỆNH",
+        "choose-doctor": "Chọn bác sĩ",
+        "choose-date": "Chọn ngày",
+        "save": "Lưu thông tin",
+        "schedule": "Lịch khám",
+        "announce": "Bác sĩ không có lịch khám trong khoảng thời gian này. Vui lòng chọn thời gian khác !",
+        "choose": "Chọn ",
+        "book-free": "  và đặt (miễn phí)",
+        "title-info": "Thông tin phòng khám",
+        "fee": "Giá khám",
+        "open-detail": "Xem chi tiết",
+        "close-detail": "Ẩn bảng giá",
+        "paid": "Người bệnh có thể thanh toán bằng : ",
+        "fee_special": "GIÁ KHÁM"
+    },
+    "admin": {
+        "manage-doctor": {
+            "title": "TẠO THÊM THÔNG TIN BÁC SĨ",
+            "choose-doctor": "Chọn bác sĩ",
+            "introduction": "Thông tin giới thiệu",
+            "save": "Lưu thông tin",
+            "create": "Tạo thông tin",
+            "choose-price": "Giá khám bệnh",
+            "payment": "Phương thức thanh toán",
+            "province": "Tỉnh thành",
+            "name": "Tên phòng khám",
+            "address": "Địa chỉ phòng khám",
+            "note": "Ghi chú",
+            "specailty": "Chuyên khoa",
+            "clinic": "Phòng khám"
+        }
+    },
+    "booking-modal": {
+        "title": "Thông tin đặt lịch khám bệnh",
+        "fullname": "Họ và tên",
+        "force": "(Bắt buộc)",
+        "phone": "Số điện thoại",
+        "email": "Email",
+        "gender": "Giới tính",
+        "reason": "Lý do khám bệnh",
+        "address": "Địa chỉ liên hệ",
+        "birthday": "Ngày sinh",
+        "yes": "Xác nhận",
+        "no": "Hủy bỏ",
+        "free": "Miễn phí đặt lịch"
+    },
+    "verify-email": {
+        "confirm": "XÁC NHẬN ĐẶT LỊCH THÀNH CÔNG",
+        "failed": "LỊCH HẸN ĐÃ TỒN TẠI HOẶC ĐÃ XÁC NHẬN TRƯỚC ĐÓ"
+    },
+    "detail-specialty": {
+        "more": "Xem thêm",
+        "hide": "Ẩn bớt"
+    }
+}

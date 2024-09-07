@@ -1,0 +1,27 @@
+.manage-patient-container{
+    .m-p-title{
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .m-p-body{
+        .btn-confirm{
+            width: 120px;
+            margin-left: 20px;
+        }
+    }
+}
+
+div._loading_overlay_wrapper {
+    position: unset;
+    
+    .loading_overlay_overlay{
+        
+        height: 10000px;
+        z-index: 1000000 !important;
+    }
+}
+.css-df17o1{
+    position: fixed !important;
+}
