@@ -222,7 +222,7 @@ let getDetailDoctorById = (id) =>{
                 else{
                     if(data.image)
                     {
-                        data.image = Buffer.from(item.image,'base64').toString('binary');
+                        data.image = Buffer.from(data.image,'base64').toString('binary');
                         resolve({
                             data: data,
                             errCode: 0,
