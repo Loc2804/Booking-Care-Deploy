@@ -3,7 +3,6 @@ import { getAllCodeService, createNewUserService,  getAllUsers, deleteUserServic
     getTopDoctorHomeService, 
     getAllDoctorService,saveDetailDoctor, getAllSpecialty,getAllClinic } from '../../services/userService';
 import { toast } from 'react-toastify';
-// import { types } from 'node-sass';
 
 export const fetchGenderStart = () => {
     return async(dispatch, getState) =>{
