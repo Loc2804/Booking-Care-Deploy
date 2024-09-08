@@ -15,7 +15,6 @@ import {CRUD_ACTIONS, LANGUAGES}  from '../../../utils';
 
 import Select from 'react-select';
 import { getAllSpecialty, getDetailInfoDoctor } from '../../../services/userService';
-import { selectFilter } from 'react-bootstrap-table2-filter';
 
 const mdParser = new MarkdownIt(/* Markdown-it options */);
 

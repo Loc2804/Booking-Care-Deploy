@@ -329,7 +329,7 @@ var getDetailDoctorById = function getDetailDoctorById(id) {
               });
             } else {
               if (data.image) {
-                data.image = new Buffer(data.image, 'base64').toString('binary');
+                data.image = Buffer.from(item.image,'base64').toString('binary');
                 resolve({
                   data: data,
                   errCode: 0,
@@ -651,7 +651,7 @@ var getProfileDoctorById = function getProfileDoctorById(id) {
               });
             } else {
               if (data.image) {
-                data.image = new Buffer(data.image, 'base64').toString('binary');
+                data.image = Buffer.from(item.image,'base64').toString('binary');
                 resolve({
                   data: data,
                   errCode: 0,

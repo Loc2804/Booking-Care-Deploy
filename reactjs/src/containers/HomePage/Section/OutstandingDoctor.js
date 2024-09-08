@@ -6,7 +6,7 @@ import { FormattedMessage, injectIntl } from 'react-intl';
 import Slider from 'react-slick';
 import * as actions from '../../../store/actions';
 import {LANGUAGES} from '../../../utils'
-
+import { Buffer } from 'buffer';
 
 class OutstandingDoctor extends Component {
     
@@ -56,7 +56,7 @@ class OutstandingDoctor extends Component {
                                     let  imgBase64 = '';
                                     if(item.image)
                                     {
-                                        imgBase64 = new Buffer(item.image,'base64').toString('binary');
+                                        imgBase64 = Buffer.from(item.image,'base64').toString('binary');
                                             
                                     }
                                     let nameVi = `${item.positionData.valueVi}, ${item.firstName} ${item.lastName}`;

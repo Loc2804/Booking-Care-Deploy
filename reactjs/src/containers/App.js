@@ -25,6 +25,8 @@ import DetailSpecialty from './Patient/Specialty/DetailSpecialty.js';
 import AllSpecialty from './System/Specialty/AllSpecialty.js';
 import DetailClinic from './Patient/Clinic/DetailClinic.js';
 
+
+
 class App extends Component {
 
     handlePersistorState = () => {
