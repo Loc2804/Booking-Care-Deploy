@@ -8,12 +8,20 @@ import cors from 'cors';
 require('dotenv').config();
 
 let app = express();
-const corsOptions = {
+const corsOptions = [
+  {
     origin: 'http://localhost:3000', // Thay đổi thành URL của client của bạn
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Các phương thức HTTP mà bạn cho phép
     allowedHeaders: ['Content-Type', 'Authorization'], // Các header mà bạn cho phép
     credentials: true // Cho phép thông tin xác thực
-  };
+  },
+  {
+    origin: 'https://booking-care-deploy-fe.vercel.app', // Thay đổi thành URL của client của bạn
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Các phương thức HTTP mà bạn cho phép
+    allowedHeaders: ['Content-Type', 'Authorization'], // Các header mà bạn cho phép
+    credentials: true // Cho phép thông tin xác thực
+  }
+];
   
   app.use(cors(corsOptions));
 //config
