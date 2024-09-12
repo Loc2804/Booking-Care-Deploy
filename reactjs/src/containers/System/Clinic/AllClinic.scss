@@ -1,26 +1,26 @@
-.specialty-container{
+.clinic-container{
     .home-header-container {
         background-color: #effffa;
     }
-    .all-specialty-container{
-        .title-specialty{
+    .all-clinic-container{
+        .title-clinic{
             font-size: 20px;
             font-weight: 600;
             margin-left: 100px;
         }
-        .one-specialty{
+        .one-clinic{
             margin: 20px 100px;
             border-bottom: 1px solid #ddd;
             cursor: pointer;
             display: flex;
             align-items: center;
-            .img-specialty{
-                height: 100px;
+            .img-clinic{
+                height: 150px;
                 width: 200px;
-                background-size: cover;
+                background-size: contain;
                 background-repeat: no-repeat;
             }
-            .name-specialty{
+            .name-clinic{
                 font-size: 18px;
                 margin-left: 20px;
             }

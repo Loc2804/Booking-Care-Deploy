@@ -28,6 +28,12 @@ class MedicalFacility extends Component {
                 this.props.history.push(`/detail-clinic/${item.id}`);
             } 
     }
+    showMoreClinic = () =>{
+        if(this.props.history)
+        {
+            this.props.history.push(`/all-clinic`);
+        } 
+    }
     render() {
         let {dataClinic} = this.state;
         return (
@@ -35,7 +41,7 @@ class MedicalFacility extends Component {
                 <div className='section-container'>
                     <div className='section-header'>
                         <span className='title-section'><b> <FormattedMessage id="section-medical-faclity.title-medical"></FormattedMessage></b></span>
-                        <button className='btn-section'><b> <FormattedMessage id="section-medical-faclity.more"></FormattedMessage></b></button>
+                        <button className='btn-section' onClick={() => this.showMoreClinic()}><b> <FormattedMessage id="section-medical-faclity.more"></FormattedMessage></b></button>
                     </div>
                     <div className='section-body'>
                         <Slider {...this.props.settings}>

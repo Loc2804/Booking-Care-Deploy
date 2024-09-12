@@ -6,7 +6,15 @@ import { FormattedMessage, injectIntl } from 'react-intl';
 import { LANGUAGES } from '../../utils/constant';
 import { changeLanguageApp } from '../../store/actions/appActions';
 import { withRouter } from 'react-router-dom';
+import ListMenu from './ListMenu';
+
 class HomeHeader extends Component {
+    constructor(props){
+        super(props);
+        this.state ={
+            isOpenList : false,
+        }
+    }
     changeLanguage =(language) =>{
         //fire redux events: actions
        this.props.changeLanguageAppRedux(language);
@@ -17,6 +25,16 @@ class HomeHeader extends Component {
             this.props.history.push(`/home`);
         } 
     }
+    showList = () =>{
+        this.setState({
+            isOpenList: true,
+        })
+    }
+    closeList = () =>{
+        this.setState({
+            isOpenList: false,
+        })
+    }
     render() {
         const { intl } = this.props;
         let language = this.props.language;
@@ -25,7 +43,7 @@ class HomeHeader extends Component {
                 <div className='home-header-container'>
                     <div className='home-header-content'>
                         <div className='left-content'>
-                            <i className="fas fa-bars"></i>
+                            <i className="fas fa-bars" onClick={() => {this.showList()}}></i>
                             <div className='header-logo' onClick={() => {this.returnHome()}}></div>
                         </div>
 
@@ -110,6 +128,10 @@ class HomeHeader extends Component {
                         
                     </div>
                 }
+                <ListMenu
+                    isOpenList = {this.state.isOpenList}
+                    closeList = {this.closeList}
+                />
             </React.Fragment>
         );
     }
