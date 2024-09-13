@@ -12,7 +12,7 @@ import MarkdownIt from 'markdown-it';
 import MdEditor from 'react-markdown-editor-lite';
 // import style manually
 import 'react-markdown-editor-lite/lib/index.css';
-
+import ReactPaginate from 'react-paginate';
 
 const mdParser = new MarkdownIt(/* Markdown-it options */);
 
@@ -27,6 +27,8 @@ class TableManageUser extends Component {
         super(props);
         this.state = {
             userRedux: [],
+            currentPage:0,
+            usersPerPage:3,
         }
     }
 
@@ -50,9 +52,19 @@ class TableManageUser extends Component {
         console.log('Check user:' , user);
         this.props.handleEditUserFromParent(user);
     }
+
+    
+    handlePageClick = (data) => {
+        const selectedPage = data.selected;
+        this.setState({ currentPage: selectedPage });
+    };
     render() {
         const {intl} = this.props;
         let arrUsers = this.state.userRedux;
+        const { currentPage, usersPerPage } = this.state;
+        const offset = currentPage * usersPerPage;
+        const currentUsers = arrUsers.slice(offset, offset + usersPerPage);
+        const pageCount = Math.ceil(arrUsers.length / usersPerPage);
         return (
             <>
                 <div className='users-table my-4'>
@@ -69,7 +81,7 @@ class TableManageUser extends Component {
                         </thead>
                         <tbody>
                         {
-                            arrUsers && arrUsers.map((item,index) =>{
+                            currentUsers && currentUsers.map((item,index) =>{
                                 return( 
                                     <tr key={index}>  
                                         <td>{item.email}</td>
@@ -95,6 +107,17 @@ class TableManageUser extends Component {
                         } 
                         </tbody>
                     </table>
+                    <ReactPaginate
+                            breakLabel="..."
+                            nextLabel="next >"
+                            onPageChange={this.handlePageClick}
+                            pageRangeDisplayed={5}
+                            pageCount={pageCount}
+                            previousLabel="< previous"
+                            renderOnZeroPageCount={null}
+                            containerClassName={"pagination"}
+                            activeClassName={"active"}
+                        />
                 </div>
                 <MdEditor style={{ height: '500px' }} renderHTML={text => mdParser.render(text)} onChange={handleEditorChange} />
             </>

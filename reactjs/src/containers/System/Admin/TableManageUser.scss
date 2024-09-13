@@ -45,3 +45,29 @@
         color: orangered !important;
     }
 }
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  gap:10px;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination li a {
+  padding: 10px;
+  border: 1px solid #ddd;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.pagination .active a {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
