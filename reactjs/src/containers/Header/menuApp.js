@@ -40,13 +40,13 @@ export const adminMenu = [
             },
         ]
     },
-    { //quản lý cẩm nang
-        name: 'menu.admin.handbook', 
-        menus: [
+    {
+        name: 'menu.admin.change-password', 
+        menus:[
             {
-                name: 'menu.admin.manage-handbook', link: '/system/manage-handbook'                
-            },
-        ]
+                name: 'menu.admin.change-password', link: '/system/change-password' 
+            }
+        ]           
     },
 ];
 
@@ -61,5 +61,13 @@ export const doctorMenu = [
                 name: 'menu.doctor.manage-patient', link: '/doctor/manage-patient' 
             },
         ]
-    }
+    },
+    {
+        name: 'menu.admin.change-password', 
+        menus:[
+            {
+                name: 'menu.admin.change-password', link: '/system/change-password' 
+            }
+        ]           
+    },
 ];

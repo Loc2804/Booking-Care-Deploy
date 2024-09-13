@@ -61,7 +61,8 @@
             "specialty": "Chuyên khoa",
             "manage-specialty": "Quản lí chuyên khoa",
             "handbook": "Cẩm nang",
-            "manage-handbook": "Quản lí cẩm nang"
+            "manage-handbook": "Quản lí cẩm nang",
+            "change-password": "Đổi mật khẩu"
         },
         "doctor": {
             "manage-schedule": "Quản lí kế hoạch khám bệnh",

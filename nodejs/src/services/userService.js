@@ -231,6 +231,62 @@ let getAllCodeService = (typeInput)=>{
         }
     })
 }
+let handleChangePassword = (data) =>{
+    return new Promise(async(resolve, reject) =>{
+        try {
+            if(!data.email || !data.current || !data.new){
+                resolve({
+                    errCode:1,
+                    message:'Missing parameters',
+                })
+            }
+            else{
+                let isExisted = await checkUserEmail(data.email);
+                if(isExisted)
+                {
+                    let user = await db.User.findOne({
+                        where: {email : data.email},
+                        attributes:['id','email','password'],
+                        raw: false,       
+                    });
+                    if(user)
+                    {
+                        let check = await bcrypt.compareSync(data.current, user.password);
+                        if(check)
+                        {
+                            let newPassword = await hashUserPassword(data.new);
+                            user.password = newPassword;
+                            try {
+                                await db.User.update({ password: newPassword }, { where: { id: user.id } });
+                                resolve({
+                                    errCode: 0,
+                                    message: 'Change password success.',
+                                });
+                            } catch (error) {
+                                reject({
+                                    errCode: 2,
+                                    message: 'Error while saving new password.',
+                                });
+                            }
+                            resolve({
+                                errCode: 0,
+                                message: 'Change password success',
+                            })
+                        }
+                        else{
+                            resolve({
+                                errCode: 0,
+                                message: 'Your current password is incorrect. Please check again!',
+                            })
+                        }
+                    }
+                }
+            }
+        } catch (error) {
+            reject(error);
+        }
+    })
+}
 module.exports = {
     handleUserLogin: handleUserLogin,
     getAllUsers: getAllUsers,
@@ -238,4 +294,5 @@ module.exports = {
     deleteUser: deleteUser,
     updateUser:updateUser,
     getAllCodeService:getAllCodeService,
+    handleChangePassword:handleChangePassword,
 }

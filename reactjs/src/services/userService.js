@@ -105,10 +105,13 @@ const getAllPatient= (data) =>{
 const sendRemedyForPatient= (data) =>{
     return axios.post(`/api/send-remedy`,data)
 }
+const handleSaveChangePassword= (data) =>{
+    return axios.put('/api/change-password', data);
+}
 export {handleLoginApi , getAllUsers , createNewUserService ,deleteUserService,
     editUserService, getAllCodeService,  getTopDoctorHomeService,  getAllDoctorService,
     saveDetailDoctor, getDetailInfoDoctor,saveBulkScheduleDoctor, getScheduleDoctorByDate,
     getExtraDoctorInfoById,getProfileDoctorById,postPatientBookingAppointment,postVerifyBookingAppointment,
     postNewSpecialty,getAllSpecialty,getDetailSpecialtyById, postNewClinic, getAllClinic,getDetailClinicById,
-    getAllPatient,sendRemedyForPatient
+    getAllPatient,sendRemedyForPatient,handleSaveChangePassword
 };

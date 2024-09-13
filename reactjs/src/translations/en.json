@@ -61,7 +61,8 @@
             "specialty": "Specialties",
             "manage-specialty": "Manage Specialties",
             "handbook": "Handbook",
-            "manage-handbook": "Manage handbooks"
+            "manage-handbook": "Manage handbooks",
+            "change-password": "Change password"
         },
         "doctor": {
             "manage-schedule": "Manage Doctor's schedule",

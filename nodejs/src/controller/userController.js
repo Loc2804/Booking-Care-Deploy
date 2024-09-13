@@ -71,6 +71,20 @@ let getAllCode =async(req,res) =>{
         })
     }
 }
+
+let handleChangePassword = async(req, res) =>{
+    try {
+        let data = req.body;
+        let info = await userService.handleChangePassword(data);
+        return res.status(200).json(info);
+    } catch (error) {
+        console.log('Get all code error: ',error);
+        return res.status(200).json({
+            errCode: -1,
+            message:'Error from server!'
+        })
+    }
+}
 module.exports = {
     handleLogin : handleLogin,
     handleGetAllUser: handleGetAllUser,
@@ -78,4 +92,5 @@ module.exports = {
     handleEditUser:  handleEditUser,
     handleDeleteUser: handleDeleteUser,
     getAllCode:getAllCode,
+    handleChangePassword:handleChangePassword,
 }
